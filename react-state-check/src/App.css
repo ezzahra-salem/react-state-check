@@ -1,0 +1,72 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6e6ec;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0d0c0c;
+  box-shadow: 0 2px 4px rgba(246, 238, 238, 0.967);
+}
+
+.toggle-show-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-show-button:hover {
+  background-color: #0056b3;
+}
+
+.person {
+  color: #e6e6ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.person img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.person p {
+  color: #e7e7e7;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.person p.bio {
+  color: #f8f8f8;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.person p.profession {
+  font-size: 14px;
+  font-weight: bold;
+  color: #e6e6ec;
+}
+
+.show-person {
+  display: flex;
+  color: #e6e6ec;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f32020;
+  padding: 20px;
+  border-radius: 5px;
+}
