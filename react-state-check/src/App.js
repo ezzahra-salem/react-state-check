@@ -20,14 +20,17 @@ function App() {
 
   return (
     <div>
-      <button onClick={toggleShow}>Show</button>
+    <div>
+      <button className="toggle-show-button" onClick={toggleShow}>Show</button>
+      </div>
       {show && (
-        <div>
+        <div className="menu">
           <h1>{person.fullName}</h1>
           <img src={person.imgSrc} alt={person.fullName} />
           <p>{person.bio}</p>
           <p>{person.profession}</p>
         </div>
+        
       )}
     </div>
   );

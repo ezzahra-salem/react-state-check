@@ -1,7 +1,9 @@
 /* App.css */
-body {
+/*body {
   font-family: Arial, sans-serif;
-  background-color: #e6e6ec;
+  background-color: #0b0b0b;
+  color: #e6e6ec;
+
 }
 
 .container {
@@ -21,52 +23,58 @@ body {
   cursor: pointer;
 }
 
-.toggle-show-button:hover {
-  background-color: #0056b3;
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.h1{
+  display: flex;
+  justify-content: center;
+}
+/* Add this to your main CSS file or create a new one */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf6f6;
+  color: #ede6e6;
 }
 
-.person {
-  color: #e6e6ec;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+button.toggle-show-button {
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu {
+  background-color: #100f0f;
+  border: 1px solid #191717;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.menu h1 {
+  margin-bottom: 10px;
+}
+
+.menu img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
   margin-bottom: 20px;
 }
 
-.person img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
+.menu p {
   margin-bottom: 10px;
 }
 
-.person p {
-  color: #e7e7e7;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.person p.bio {
-  color: #f8f8f8;
-  font-size: 14px;
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-.person p.profession {
-  font-size: 14px;
-  font-weight: bold;
-  color: #e6e6ec;
-}
-
-.show-person {
-  display: flex;
-  color: #e6e6ec;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f32020;
-  padding: 20px;
-  border-radius: 5px;
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  .menu {
+    margin: 10px;
+  }
 }
